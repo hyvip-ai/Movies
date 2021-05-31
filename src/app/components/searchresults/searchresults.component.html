@@ -1,0 +1,66 @@
+
+
+    
+  
+      <div class="tv-layout">
+	  
+        <div class="container-fluid">
+				
+          <div class="row">
+            <div class="span12">
+			
+<div class="nav-row">
+<a routerLink='/Search'>
+<div class="round-box back-arrow">
+<img src="../../../assets/images/icons/arrow-back.png" >
+</div>
+</a>
+
+<a routerLink='/Search'>
+<div class="round-box close-icon">
+<img src="../../../assets/images/icons/close-icon.png">
+</div>
+</a>
+
+</div>
+
+
+<div class="tv-data-row">
+<h1>Search Results</h1>
+
+<div class="col-12" *ngIf = 'mydata.Response=="True"' style="text-align: center;">
+
+<div class="search-results" *ngIf = 'mydata'>
+
+    <div class="item" style="float: none;">
+        
+        <img src="{{mydata.Poster}}" style="width: 20%;  margin: 0px auto;">
+        <p class="movie-name">{{mydata.Title}} ({{mydata.Language}})</p>
+        <p class="movie-name">{{mydata.Year}}</p>
+
+    
+            <p class="movie-name">{{mydata.Actors}}</p>
+            <p class="movie-name">{{mydata.Plot}}</p>
+            <p class="movie-name">{{mydata.Awards}}</p>
+            <p class="movie-name">IMDB Rating {{mydata.imdbRating}}</p>
+
+
+        </div>
+</div>
+</div>			
+<div class="col-12" *ngIf = 'mydata.Response=="False"' style="text-align: center;">
+    <h1>No Data Found In The DataBase</h1>
+
+    </div>	
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+  
+
+
+
+

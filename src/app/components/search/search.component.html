@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TV</title>
+
+</head>
+<body>
+
+    
+  
+      <div class="tv-layout">
+	  
+        <div class="container-fluid">
+				
+          <div class="row">
+            <div class="span12">
+			
+			
+<div class="nav-row">
+<a routerLink='Search'>
+<div class="round-box back-arrow">
+<img src="assets/images/icons/arrow-back.png">
+</div>
+</a>
+
+<a href="index.html">
+<div class="round-box close-icon">
+<img src="assets/images/icons/close-icon.png">
+</div>
+</a>
+
+</div>
+
+
+<div class="tv-data-row">
+
+
+<div class="col-12">
+
+<div class="seach-box">
+<div class="input-group">
+<span class="input-search">
+<img src="assets/images/icons/search-icon.png">
+</span>
+<input type="text" class="form-control" placeholder="Search By Name" [(ngModel)] = 'searchterm' aria-label="Username" aria-describedby="basic-addon1">
+</div>
+</div>
+
+
+
+<div class="search-block-iteams">
+<div class="recent-search">
+<h1>Top Search</h1>
+
+<div class="seach-item" (click)='addmoney()'>
+<span >
+<img src="assets/images/icons/reload-icon.png">
+Money Heist
+</span>
+</div>
+
+<div class="seach-item" (click)='adddark()'>
+<span >
+<img src="assets/images/icons/reload-icon.png">
+Dark
+</span>
+</div>
+
+<div class="seach-item" (click)='addBrak()'>
+<span >
+<img src="assets/images/icons/reload-icon.png">
+Breaking Bad
+</span>
+</div>
+
+<div class="seach-item" (click) = 'addum()'>
+<span >
+<img src="assets/images/icons/reload-icon.png">
+Umbrella Academy
+</span></div>
+</div>
+
+<div class="key-board-box" id="show-numbers"   style="display:none;">
+<div class="key-board-row">
+<span class="key"><button >1</button></span>
+<span class="key"><button>2</button></span>
+<span class="key"><button>3</button></span>
+<span class="key"><button> & </button></span>
+<span class="key"><button> # </button></span>
+<span class="key"><button> ( </button></span>
+<span class="key"><button> ) </button></span>
+<span class="arrow-change"><button>
+<img src="../../../assets/images/icons/clear-icon.png">
+</button></span>
+</div>
+
+<div class="key-board-row">
+<span class="key"><button>4</button></span>
+<span class="key"><button>5</button></span>
+<span class="key"><button>6</button></span>
+<span class="key"><button> @ </button></span>
+<span class="key"><button> ! </button></span>
+<span class="key"><button> ? </button></span>
+<span class="key"><button> : </button></span>
+<span class="arrow-change show-alpabets"><button>& ABC</button></span>
+</div>
+
+
+<div class="key-board-row">
+<span class="key"><button>7</button></span>
+<span class="key"><button>8</button></span>
+<span class="key"><button>9</button></span>
+<span class="key"><button>0</button></span>
+<span class="key"><button> . </button></span>
+<span class="key"><button> _ </button></span>
+<span class="key"><button> " </button></span>
+</div>
+
+
+<div class="key-board-row">
+<span class="space-clear"><button>SPACE</button></span>
+<span class="space-clear"><button>CLEAR</button></span>
+<span class="search-btn"><a href="search-results.html"><button>SEARCH</button></a></span>
+</div>
+
+</div>
+
+
+<div class="key-board-box" id="show-alpabets">
+<div class="key-board-row">
+<span class="key"><button (click)='adda()'>A</button></span>
+<span class="key"><button (click)='addb()'>B</button></span>
+<span class="key"><button (click)='addc()'>C</button></span>
+<span class="key"><button (click)='addd()'>D</button></span>
+<span class="key"><button (click)='adde()'>E</button></span>
+<span class="key"><button (click)='addf()'>F</button></span>
+<span class="key"><button (click)='addg()'>G</button></span>
+<span class="arrow-change" (click)='rem()'><button>
+<img src="assets/images/icons/clear-icon.png">
+</button></span>
+</div>
+
+<div class="key-board-row">
+<span class="key"><button (click)='addh()'>H</button></span>
+<span class="key"><button (click)='addi()'>I</button></span>
+<span class="key"><button (click)='addj()'>J</button></span>
+<span class="key"><button (click)='addk()'>K</button></span>
+<span class="key"><button (click)='addl()'>L</button></span>
+<span class="key"><button (click)='addm()'>M</button></span>
+<span class="key"><button (click)='addn()'>N</button></span>
+<span class="arrow-change show-numbers"><button> 123</button></span>
+</div>
+
+<div class="key-board-row">
+<span class="key"><button (click)='addo()'>O</button></span>
+<span class="key"><button (click)='addp()'>P</button></span>
+<span class="key"><button (click)='addq()'>Q</button></span>
+<span class="key"><button (click)='addr()'>R</button></span>
+<span class="key"><button (click)='adds()'>S</button></span>
+<span class="key"><button (click)='addt()'>T</button></span>
+<span class="key"><button (click)='addu()'>U</button></span>
+</div>
+
+<div class="key-board-row">
+<span class="key"><button (click)='addv()'>V</button></span>
+<span class="key"><button (click)='addw()'>W</button></span>
+<span class="key"><button (click)='addx()'>X</button></span>
+<span class="key"><button (click)='addy()'>Y</button></span>
+<span class="key"><button (click)='addz()'>Z</button></span>
+<span class="key"><button>-</button></span>
+<span class="key"><button>'</button></span>
+</div>
+
+<div class="key-board-row">
+<span class="space-clear"><button (click)='addspace()'>SPACE</button></span>
+<span class="space-clear"><button (click)='clear()'>CLEAR</button></span>
+<span class="search-btn"><a (click)='search()'><button>SEARCH</button></a></span>
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+			
+			</div>
+          </div>
+        </div>
+		
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+  </body>
+</html>

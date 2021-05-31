@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "messenger"
+  "defaultProject": "messenger",
+  "cli": {
+    "analytics": "0c12f64e-11b9-4c38-a02f-987b81909c9b"
+  }
 }
